@@ -1,0 +1,50 @@
+# ASP.NET Core
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vscode/
+.vs/
+*.sln.ide
+
+# Node.js (Angular)
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log*
+package-lock.json
+dist/
+out-tsc/
+.angular/
+.angular/cache/
+
+# Environment Variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Build results
+**/bin/
+**/obj/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio Code settings
+.history/
