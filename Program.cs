@@ -35,6 +35,7 @@ builder.Services.AddAuthentication(opt =>
 
 builder.Services.AddHealthChecks();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen(c => {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
