@@ -1,6 +1,6 @@
 using backend.DTOs;
 using backend.Models;
-using backend.Services.AuthService.Interface;
+using backend.Services.AuthService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
@@ -24,11 +24,11 @@ namespace backend.Controllers
         {
             if(String.IsNullOrEmpty(user.UserName))
             {
-                return BadRequest (new {message = "email address need to entered"});
+                return BadRequest (new {message = "username need to be entered"});
             }
             else if (String.IsNullOrEmpty(user.Password))
             {
-                return BadRequest (new {message = "Password need to entered"});
+                return BadRequest (new {message = "Password need to be entered"});
             }
 
             User loggedInUser = await _authService.Login(user.UserName, user.Password);

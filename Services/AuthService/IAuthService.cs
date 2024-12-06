@@ -1,6 +1,6 @@
 using backend.Models;
 
-namespace backend.Services.AuthService.Interface
+namespace backend.Services.AuthService
 {
     public interface IAuthService
     {

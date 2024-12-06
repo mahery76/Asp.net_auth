@@ -1,6 +1,6 @@
 using backend.Services;
-using backend.Services.AuthService.Interface;
-using backend.Services.AuthService.Implementation;
+using backend.Services.AuthService;
+using backend.Services.UserService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -13,11 +13,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseInMemoryDatabase("UserList"));
 builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserService, UserService>();
+
 builder.Services.AddAuthentication(opt => 
 {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
+
 .AddJwtBearer(opt =>
 { // for dev only
     opt.RequireHttpsMetadata = false;

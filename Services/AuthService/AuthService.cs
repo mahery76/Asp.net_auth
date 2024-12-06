@@ -1,11 +1,10 @@
 using backend.Models;
-using backend.Services.AuthService.Interface;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace backend.Services.AuthService.Implementation
+namespace backend.Services.AuthService
 {
     using BCrypt.Net;
 
@@ -32,12 +31,12 @@ namespace backend.Services.AuthService.Implementation
             var key = Encoding.ASCII.GetBytes(_configuration["JWT:SecretKey"]);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
+                Subject = new ClaimsIdentity(
+                [
                     new Claim(ClaimTypes.Name, user.UserName),
                     new Claim(ClaimTypes.GivenName, user.Name),
                     new Claim(ClaimTypes.Role, user.Role)
-                }),
+                ]),
                 IssuedAt = DateTime.UtcNow,
                 Issuer = _configuration["JWT:Issuer"],
                 Audience = _configuration["JWT:Audience"],
