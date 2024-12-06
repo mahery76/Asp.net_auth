@@ -903,9 +903,19 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "6139148f-b91d-4842-a17b-00b58be3fbb3",
 								"exec": [
 									""
 								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d6b58b81-25fb-4c15-a107-6968433482f2",
+								"exec": [],
 								"type": "text/javascript"
 							}
 						}
@@ -915,15 +925,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.getpostman.com/collections",
-							"protocol": "https",
+							"raw": "http://localhost:5041/user",
+							"protocol": "http",
 							"host": [
-								"api",
-								"getpostman",
-								"com"
+								"localhost"
 							],
+							"port": "5041",
 							"path": [
-								"collections"
+								"user"
 							],
 							"query": [
 								{
