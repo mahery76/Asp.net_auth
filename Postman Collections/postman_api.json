@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "User",
+			"name": "Auth",
 			"item": [
 				{
 					"name": "Register",
@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"hsinj\",\r\n    \"password\": \"mher\",\r\n    \"role\": \"Everyone\"\r\n}",
+							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"mahery\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -89,7 +89,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaGFzaW5qYWthIiwiZ2l2ZW5fbmFtZSI6Im1haGVyeSIsInJvbGUiOiJFdmVyeW9uZSIsIm5iZiI6MTczMzQ3MzEwOCwiZXhwIjoxNzMzNDc0OTA4LCJpYXQiOjE3MzM0NzMxMDgsImlzcyI6IlRlc3RJc3N1ZXIiLCJhdWQiOiJUZXN0QXVkaWVuY2UifQ.LPBTOnOcCjjkg1_0RtvNFXkHqeuAKHnwjQcZkPuLIIg",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFoZXJ5IiwiZ2l2ZW5fbmFtZSI6Im1haGVyeSIsInJvbGUiOiJFdmVyeW9uZSIsIm5iZiI6MTczMzQ5MTAzMCwiZXhwIjoxNzMzNDkyODI5LCJpYXQiOjE3MzM0OTEwMjksImlzcyI6IlRlc3RJc3N1ZXIiLCJhdWQiOiJUZXN0QXVkaWVuY2UifQ.tDGbGc2nTP24jgMQVZvK86UJEhAD6baVQflLXIWq-Q0",
 								"type": "text"
 							}
 						],
@@ -102,7 +102,7 @@
 			"description": "The `/me` endpoints let you manage information about the authenticated user."
 		},
 		{
-			"name": "Collections",
+			"name": "User",
 			"item": [
 				{
 					"name": "Create a collection",
@@ -898,15 +898,28 @@
 					]
 				},
 				{
-					"name": "Get all collections",
+					"name": "Get all users",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
+								"id": "6139148f-b91d-4842-a17b-00b58be3fbb3",
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d6b58b81-25fb-4c15-a107-6968433482f2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -915,15 +928,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.getpostman.com/collections",
-							"protocol": "https",
+							"raw": "http://localhost:5041/api/users",
+							"protocol": "http",
 							"host": [
-								"api",
-								"getpostman",
-								"com"
+								"localhost"
 							],
+							"port": "5041",
 							"path": [
-								"collections"
+								"api",
+								"users"
 							],
 							"query": [
 								{
