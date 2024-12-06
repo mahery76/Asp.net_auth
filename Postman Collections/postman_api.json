@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"mahery\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
+							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"hasinjaka\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -64,7 +64,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userName\": \"adityaoberai1\",\r\n    \"password\": \"test123\"\r\n}",
+							"raw": "{\r\n    \"userName\": \"mahery\",\r\n    \"password\": \"mahery\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -89,7 +89,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3MzM0NzE4MzQsImV4cCI6MTczMzQ3MzYzMywiaWF0IjoxNzMzNDcxODMzLCJpc3MiOiJUZXN0SXNzdWVyIiwiYXVkIjoiVGVzdEF1ZGllbmNlIn0.kR7z2IjwXoV0M_ORsA82kguBOul2kLb74V4WzXRY01o",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaGFzaW5qYWthIiwiZ2l2ZW5fbmFtZSI6Im1haGVyeSIsInJvbGUiOiJFdmVyeW9uZSIsIm5iZiI6MTczMzQ3MzEwOCwiZXhwIjoxNzMzNDc0OTA4LCJpYXQiOjE3MzM0NzMxMDgsImlzcyI6IlRlc3RJc3N1ZXIiLCJhdWQiOiJUZXN0QXVkaWVuY2UifQ.LPBTOnOcCjjkg1_0RtvNFXkHqeuAKHnwjQcZkPuLIIg",
 								"type": "text"
 							}
 						],
