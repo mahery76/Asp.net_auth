@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"hsinj\",\r\n    \"password\": \"mher\",\r\n    \"role\": \"Everyone\"\r\n}",
+							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"mahery\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
