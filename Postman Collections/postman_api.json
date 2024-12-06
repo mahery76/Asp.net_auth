@@ -89,7 +89,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer namespace backend.Controllers\n{\n    [Route(\"[Controller]\")]\n    [ApiController]\n    public class UserController : ControllerBase\n    {\n        private readonly IUserService _userService;\n        public UserController(IUserService userService)\n        {\n            _userService = userService;\n        }\n\n        [AllowAnonymous]\n        [HttpGet]\n        public async Task<IActionResult> GetUsers()\n        {\n            List<User> Users = await _userService.GetUsers();\n            return Ok(Users);\n        }\n    }\n}",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFoZXJ5IiwiZ2l2ZW5fbmFtZSI6Im1haGVyeSIsInJvbGUiOiJFdmVyeW9uZSIsIm5iZiI6MTczMzQ5MTAzMCwiZXhwIjoxNzMzNDkyODI5LCJpYXQiOjE3MzM0OTEwMjksImlzcyI6IlRlc3RJc3N1ZXIiLCJhdWQiOiJUZXN0QXVkaWVuY2UifQ.tDGbGc2nTP24jgMQVZvK86UJEhAD6baVQflLXIWq-Q0",
 								"type": "text"
 							}
 						],
