@@ -89,7 +89,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiaGFzaW5qYWthIiwiZ2l2ZW5fbmFtZSI6Im1haGVyeSIsInJvbGUiOiJFdmVyeW9uZSIsIm5iZiI6MTczMzQ3MzEwOCwiZXhwIjoxNzMzNDc0OTA4LCJpYXQiOjE3MzM0NzMxMDgsImlzcyI6IlRlc3RJc3N1ZXIiLCJhdWQiOiJUZXN0QXVkaWVuY2UifQ.LPBTOnOcCjjkg1_0RtvNFXkHqeuAKHnwjQcZkPuLIIg",
+								"value": "Bearer namespace backend.Controllers\n{\n    [Route(\"[Controller]\")]\n    [ApiController]\n    public class UserController : ControllerBase\n    {\n        private readonly IUserService _userService;\n        public UserController(IUserService userService)\n        {\n            _userService = userService;\n        }\n\n        [AllowAnonymous]\n        [HttpGet]\n        public async Task<IActionResult> GetUsers()\n        {\n            List<User> Users = await _userService.GetUsers();\n            return Ok(Users);\n        }\n    }\n}",
 								"type": "text"
 							}
 						],
@@ -898,7 +898,7 @@
 					]
 				},
 				{
-					"name": "Get all collections",
+					"name": "Get all users",
 					"event": [
 						{
 							"listen": "test",
@@ -925,14 +925,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5041/user",
+							"raw": "http://localhost:5041/User",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5041",
 							"path": [
-								"user"
+								"User"
 							],
 							"query": [
 								{
