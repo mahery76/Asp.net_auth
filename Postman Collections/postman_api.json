@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "User",
+			"name": "Auth",
 			"item": [
 				{
 					"name": "Register",
@@ -102,7 +102,7 @@
 			"description": "The `/me` endpoints let you manage information about the authenticated user."
 		},
 		{
-			"name": "Collections",
+			"name": "User",
 			"item": [
 				{
 					"name": "Create a collection",
