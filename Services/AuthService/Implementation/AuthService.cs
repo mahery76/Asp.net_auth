@@ -34,7 +34,9 @@ namespace backend.Services.AuthService.Implementation
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(ClaimTypes.GivenName, user.Name),
+                    new Claim(ClaimTypes.Role, user.Role)
                 }),
                 IssuedAt = DateTime.UtcNow,
                 Issuer = _configuration["JWT:Issuer"],
@@ -49,6 +51,7 @@ namespace backend.Services.AuthService.Implementation
 
             return user;
         }
+        
         public async Task<User> Register(User user)
         {
             user.Password = BCrypt.HashPassword(user.Password);

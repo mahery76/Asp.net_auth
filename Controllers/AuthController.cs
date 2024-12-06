@@ -79,7 +79,9 @@ namespace backend.Controllers
             string token = Request.Headers["Authorization"];
             if(token.StartsWith("Bearer"))
             {
+
                 token = token.Substring("Bearer ".Length).Trim();
+                Console.WriteLine(token + "this is the token");
             }
             var handler = new JwtSecurityTokenHandler();
             JwtSecurityToken jwt = handler.ReadJwtToken(token);
@@ -89,6 +91,6 @@ namespace backend.Controllers
                 claims.Add(claim.Type, claim.Value);
             }
             return Ok(claims);
-        }
+        } 
     }
 }
