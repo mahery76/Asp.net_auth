@@ -1,3 +1,4 @@
+using backend.DTOs;
 using backend.Models;
 using backend.Services.AuthService.Interface;
 using Microsoft.AspNetCore.Authorization;
@@ -19,7 +20,7 @@ namespace backend.Controllers
         // post: auth/login
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Login([FromBody] LoginUser user)
+        public async Task<IActionResult> Login([FromBody] LoginUserDto user)
         {
             if(String.IsNullOrEmpty(user.UserName))
             {
@@ -42,7 +43,7 @@ namespace backend.Controllers
         // POST: auth/register
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Register([FromBody] RegisterUser user)
+        public async Task<IActionResult> Register([FromBody] RegisterUserDto user)
         {
             if (String.IsNullOrEmpty(user.Name))
             {
