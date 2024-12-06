@@ -915,8 +915,11 @@
 							"listen": "prerequest",
 							"script": {
 								"id": "d6b58b81-25fb-4c15-a107-6968433482f2",
-								"exec": [],
-								"type": "text/javascript"
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -925,14 +928,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5041/User",
+							"raw": "http://localhost:5041/api/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "5041",
 							"path": [
-								"User"
+								"api",
+								"users"
 							],
 							"query": [
 								{
