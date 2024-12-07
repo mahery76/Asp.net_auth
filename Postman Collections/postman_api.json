@@ -41,14 +41,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"mirado\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
+							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"njaka\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "http://localhost:5050/auth/register",
+						"url": "{{aspurl}}/auth/register",
 						"description": "Gets information about the authenticated user."
 					},
 					"response": []
@@ -71,7 +71,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:5050/auth/login"
+						"url": "{{aspurl}}/auth/login"
 					},
 					"response": []
 				},
@@ -93,7 +93,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:5050/auth/test"
+						"url": "{{aspurl}}/auth/test"
 					},
 					"response": []
 				}
@@ -135,12 +135,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5050/api/users",
-							"protocol": "http",
+							"raw": "{{aspurl}}/api/users",
 							"host": [
-								"localhost"
+								"{{aspurl}}"
 							],
-							"port": "5050",
 							"path": [
 								"api",
 								"users"
