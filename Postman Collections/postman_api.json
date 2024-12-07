@@ -48,7 +48,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:5041/auth/register",
+						"url": "http://localhost:5050/auth/register",
 						"description": "Gets information about the authenticated user."
 					},
 					"response": []
