@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"njaka\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Everyone\"\r\n}",
+							"raw": "{\r\n    \"name\": \"mahery\",\r\n    \"userName\": \"njaka\",\r\n    \"password\": \"mahery\",\r\n    \"role\": \"Admin\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -89,7 +89,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmpha2EiLCJnaXZlbl9uYW1lIjoibWFoZXJ5Iiwicm9sZSI6IkV2ZXJ5b25lIiwibmJmIjoxNzMzNTYzNTk5LCJleHAiOjE3MzM1NjUzOTksImlhdCI6MTczMzU2MzU5OSwiaXNzIjoiVGVzdElzc3VlciIsImF1ZCI6IlRlc3RBdWRpZW5jZSJ9.DfiAtQ-yKe5F1pAIuXLJ0fGpfmu42Pa26Fho74lXCVw",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmpha2EiLCJnaXZlbl9uYW1lIjoibWFoZXJ5Iiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzMzNTkyODczLCJleHAiOjE3MzM1OTQ2NzMsImlhdCI6MTczMzU5Mjg3MywiaXNzIjoiVGVzdElzc3VlciIsImF1ZCI6IlRlc3RBdWRpZW5jZSJ9.WLW5vnqJnr8xcEyfPFGcbwP_NwmVXmjKjZBoKtQ_wjg",
 								"type": "text"
 							}
 						],
