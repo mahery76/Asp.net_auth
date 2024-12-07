@@ -12,7 +12,7 @@ The API has 1 controller:
 
 The `AuthController` contains the login, registration, and test APIs we are using to get and try the JWT token authentication.
 
-* POST `http://localhost:5041/auth/login`
+* POST `http://localhost:5050/auth/login`
 
     * Returns the JWT token along with the user information from the database after the user enters their email and password.
     * Post Http Request Link: `https://<YOUR-DOMAIN:PORT>//auth/login`
@@ -20,8 +20,8 @@ The `AuthController` contains the login, registration, and test APIs we are usin
 
         ```json
         {
-            "userName": "adityaoberai1",
-            "password": "test123"
+            "userName": "mahery",
+            "password": "mahery"
         }
         ```
 
@@ -29,8 +29,8 @@ The `AuthController` contains the login, registration, and test APIs we are usin
 
         ```json
         {
-            "userName": "adityaoberai1",
-            "name": "Aditya",
+            "userName": "mahery",
+            "name": "Mahery Antonio",
             "role": "Everyone",
             "isActive": true,
             "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRpdHlhb2JlcmFpMSIsImdpdmVuX25hbWUiOiJBZGl0eWEiLCJyb2xlIjoiRXZlcnlvbmUiLCJuYmYiOjE2NjA3NzA0NDQsImV4cCI6MTY2MDc3MjI0NCwiaWF0IjoxNjYwNzcwNDQ0fQ.20KEe53MsDeapYk0EkeayfZqmsyPSuVOVBzsHpmFMS4",
@@ -39,7 +39,7 @@ The `AuthController` contains the login, registration, and test APIs we are usin
         ```
 
 
-* POST `http://localhost:5041/auth/register`
+* POST `http://localhost:5050/auth/register`
 
     * Adds the user's details to the database and returns the JWT token along with the user information after the user enters their information.
     * Post Http Request Link: `https://<YOUR-DOMAIN:PORT>/auth/register`
@@ -47,8 +47,8 @@ The `AuthController` contains the login, registration, and test APIs we are usin
 
         ```json
         {
-            "name": "Aditya",
-            "userName": "adityaoberai1",
+            "name": "Mahery Antonio",
+            "userName": "mahery",
             "password": "test123",
             "role": "Everyone"
         }
@@ -58,8 +58,8 @@ The `AuthController` contains the login, registration, and test APIs we are usin
 
         ```json
         {
-            "userName": "adityaoberai1",
-            "name": "Aditya",
+            "userName": "mahery",
+            "name": "Mahery Antonio",
             "role": "Everyone",
             "isActive": true,
             "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRpdHlhb2JlcmFpMSIsImdpdmVuX25hbWUiOiJBZGl0eWEiLCJyb2xlIjoiRXZlcnlvbmUiLCJuYmYiOjE2NjA3NzAzNjAsImV4cCI6MTY2MDc3MjE2MCwiaWF0IjoxNjYwNzcwMzYwfQ.oCK_udTh83F-OM7yLYK7NBQa8basKTVQpMF3GUYtUtA",
@@ -81,8 +81,8 @@ The `AuthController` contains the login, registration, and test APIs we are usin
 
         ```json
         {
-            "name": "adityaoberai1",
-            "given_name": "Aditya",
+            "name": "mahery",
+            "given_name": "mahery",
             "role": "Everyone",
             "nbf": "1660770444",
             "exp": "1660772244",
