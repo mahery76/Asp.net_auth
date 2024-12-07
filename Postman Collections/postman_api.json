@@ -133,7 +133,13 @@
 					"id": "cb8fae6d-915b-481a-bc24-54385da6cc4c",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmpha2EiLCJnaXZlbl9uYW1lIjoibWFoZXJ5Iiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzMzNTkyODczLCJleHAiOjE3MzM1OTQ2NzMsImlhdCI6MTczMzU5Mjg3MywiaXNzIjoiVGVzdElzc3VlciIsImF1ZCI6IlRlc3RBdWRpZW5jZSJ9.WLW5vnqJnr8xcEyfPFGcbwP_NwmVXmjKjZBoKtQ_wjg",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{aspurl}}/api/users",
 							"host": [
