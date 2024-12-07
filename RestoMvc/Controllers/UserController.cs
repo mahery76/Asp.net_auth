@@ -1,9 +1,9 @@
-using backend.Models;
+using RestoMvc.Models;
 using Microsoft.AspNetCore.Mvc;
-using backend.Services.UserService;
+using RestoMvc.Services.UserService;
 using Microsoft.AspNetCore.Authorization;
 
-namespace backend.Controllers
+namespace RestoMvc.Controllers
 {
     [Route("api/users")]
     [ApiController]
@@ -17,10 +17,14 @@ namespace backend.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public async Task<IActionResult> GetUsers()
+        public async Task<ActionResult<List<User>>> GetUsers()
         {
-            List<User> Users = await _userService.GetUsers();
-            return Ok(Users);
+           var users = await _userService.GetUsers();
+            if(users == null || users.Count == 0)
+            {
+                return NotFound("No users found.");
+            }
+            return Ok(users);
         }
     }
 }

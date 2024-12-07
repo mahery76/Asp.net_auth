@@ -1,10 +1,10 @@
-using backend.Models;
+using RestoMvc.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace backend.Services.AuthService
+namespace RestoMvc.Services.AuthService
 {
     using BCrypt.Net;
 

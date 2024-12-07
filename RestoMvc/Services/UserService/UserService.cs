@@ -1,7 +1,6 @@
-using backend.Models;
-using backend.Services.UserService;
+using RestoMvc.Models;
 using Microsoft.EntityFrameworkCore;
-namespace backend.Services.UserService
+namespace RestoMvc.Services.UserService
 {
     public class UserService : IUserService
     {

@@ -1,7 +1,7 @@
-using backend.Models;
+using RestoMvc.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace  backend.Services
+namespace  RestoMvc.Services
 {
     public class ApplicationDbContext : DbContext
     {

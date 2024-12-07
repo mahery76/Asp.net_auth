@@ -1,11 +1,11 @@
-using backend.DTOs;
-using backend.Models;
-using backend.Services.AuthService;
+using RestoMvc.DTOs;
+using RestoMvc.Models;
+using RestoMvc.Services.AuthService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace backend.Controllers
+namespace RestoMvc.Controllers
 {
     [Route("[Controller]/[action]")]
     [ApiController]

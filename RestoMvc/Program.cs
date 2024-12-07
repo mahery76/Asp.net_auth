@@ -1,6 +1,6 @@
-using backend.Services;
-using backend.Services.AuthService;
-using backend.Services.UserService;
+using RestoMvc.Services;
+using RestoMvc.Services.AuthService;
+using RestoMvc.Services.UserService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -14,6 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseInMemoryDataba
 builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
+
 
 builder.Services.AddAuthentication(opt => 
 {
@@ -39,6 +40,8 @@ builder.Services.AddAuthentication(opt =>
 builder.Services.AddHealthChecks();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllersWithViews();
+
+
 builder.Services.AddSwaggerGen(c => {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
@@ -71,6 +74,8 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();

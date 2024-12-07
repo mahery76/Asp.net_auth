@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace backend.DTOs
+namespace RestoMvc.DTOs
 {
     public class RegisterUserDto
     {

@@ -1,6 +1,6 @@
-using backend.Models;
+using RestoMvc.Models;
 
-namespace backend.Services.UserService
+namespace RestoMvc.Services.UserService
 {
     public interface IUserService
     {

@@ -1,6 +1,6 @@
-using backend.Models;
+using RestoMvc.Models;
 
-namespace backend.Services.AuthService
+namespace RestoMvc.Services.AuthService
 {
     public interface IAuthService
     {

@@ -1,4 +1,4 @@
-namespace resto.Models;
+namespace RestoMvc.Models;
 
 public class ErrorViewModel
 {
