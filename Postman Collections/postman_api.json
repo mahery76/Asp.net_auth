@@ -64,7 +64,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userName\": \"mahery\",\r\n    \"password\": \"mahery\"\r\n}",
+							"raw": "{\r\n    \"userName\": \"njaka\",\r\n    \"password\": \"mahery\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -89,7 +89,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFoZXJ5IiwiZ2l2ZW5fbmFtZSI6Im1haGVyeSIsInJvbGUiOiJFdmVyeW9uZSIsIm5iZiI6MTczMzQ5MTAzMCwiZXhwIjoxNzMzNDkyODI5LCJpYXQiOjE3MzM0OTEwMjksImlzcyI6IlRlc3RJc3N1ZXIiLCJhdWQiOiJUZXN0QXVkaWVuY2UifQ.tDGbGc2nTP24jgMQVZvK86UJEhAD6baVQflLXIWq-Q0",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmpha2EiLCJnaXZlbl9uYW1lIjoibWFoZXJ5Iiwicm9sZSI6IkV2ZXJ5b25lIiwibmJmIjoxNzMzNTYzNTk5LCJleHAiOjE3MzM1NjUzOTksImlhdCI6MTczMzU2MzU5OSwiaXNzIjoiVGVzdElzc3VlciIsImF1ZCI6IlRlc3RBdWRpZW5jZSJ9.DfiAtQ-yKe5F1pAIuXLJ0fGpfmu42Pa26Fho74lXCVw",
 								"type": "text"
 							}
 						],
