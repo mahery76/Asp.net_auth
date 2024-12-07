@@ -71,7 +71,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:5041/auth/login"
+						"url": "http://localhost:5050/auth/login"
 					},
 					"response": []
 				},
@@ -93,7 +93,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:5041/auth/test"
+						"url": "http://localhost:5050/auth/test"
 					},
 					"response": []
 				}
@@ -135,12 +135,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5041/api/users",
+							"raw": "http://localhost:5050/api/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "5041",
+							"port": "5050",
 							"path": [
 								"api",
 								"users"
